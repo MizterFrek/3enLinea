@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Llica Garcia</title>
+    <link rel="stylesheet" href="app.css">
+    <!-- Animación de alerta -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1 class="header">3 en Línea</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div id="turno"></div>
+           
+            <hr/>
+            
+            <p><strong>Reglas:</strong> 
+                Cada jugador solo debe colocar su símbolo una 
+                vez por turno y no debe ser sobre una casilla 
+                ya jugada.<br><br>
+                
+                Se debe conseguir realizar una línea recta 
+                o diagonal por símbolo.
+            </p>   
+            
+        </div>
+            
+        <div class="juego">
+            <div><button id="btn0" onclick="push(0)"></button></div>
+            <div><button id="btn1" onclick="push(1)"></button></div>
+            <div><button id="btn2" onclick="push(2)"></button></div>
+            <div><button id="btn3" onclick="push(3)"></button></div>
+            <div><button id="btn4" onclick="push(4)"></button></div>
+            <div><button id="btn5" onclick="push(5)"></button></div>
+            <div><button id="btn6" onclick="push(6)"></button></div>
+            <div><button id="btn7" onclick="push(7)"></button></div>
+            <div><button id="btn8" onclick="push(8)"></button></div>
+        </div>
+        
+    </main>
+    <div class="footer">
+        <button id="reinicio" class="oculto" onclick="restart()">
+            Reiniciar Juego
+        </button>
+    </div>
+        <script src="app.js"></script>
+        
+</body>
+</html>
