@@ -76,12 +76,10 @@ main{
     align-items: center;
 }
 button{
-
     width:80px;
     height: 80px;
     border: none;
     background-color: white;
-
 }
 .cross{
     background-image: url(cross.svg);
